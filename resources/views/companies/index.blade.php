@@ -5,6 +5,11 @@
     <title>Laravel 9 CRUD Tutorial Example</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
 </head>
+<style>
+    body{
+        background-color: #f2f2f2;
+    }
+</style>
 <body>
     <div class="container mt-2">
         <div class="row">
@@ -29,7 +34,7 @@
                     <th>Company Name</th>
                     <th>Company Email</th>
                     <th>Company Address</th>
-                    <th width="280px">Action</th>
+                    <th width="280px">Hello</th>
                 </tr>
             </thead>
             <tbody>

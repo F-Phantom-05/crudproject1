@@ -29,7 +29,7 @@
                     <th>Company Name</th>
                     <th>Company Email</th>
                     <th>Company Address</th>
-                    <th width="280px">Action</th>
+                    <th width="280px">Hello</th>
                 </tr>
             </thead>
             <tbody>

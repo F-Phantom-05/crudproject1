@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-`    <title>Laravel 9 CefefefefRUD Tutorial Example</title>
+    <title>Laravel 9 CRUD Tutorial Example</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
 </head>
 <body>
@@ -29,7 +29,7 @@
                     <th>Company Name</th>
                     <th>Company Email</th>
                     <th>Company Address</th>
-                    <th width="280px">Hello</th>
+                    <th width="280px">Action</th>
                 </tr>
             </thead>
             <tbody>

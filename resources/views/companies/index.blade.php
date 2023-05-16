@@ -7,7 +7,7 @@
 </head>
 <style>
     body{
-        background-color: #f2f2f2;
+        background-color: #E74D4D;
     }
 </style>
 <body>

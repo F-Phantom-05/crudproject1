@@ -14,10 +14,7 @@
                 <div class="pull-left">
                     <h2>Edit Company</h2>
                 </div>
-                <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('companies.index') }}" enctype="multipart/form-data">
-                        Back</a>
-                </div>
+                
             </div>
         </div>
         @if(session('status'))
@@ -59,7 +56,9 @@
                         @enderror
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary ml-3">Submit</button>
+                <button type="submit" class="btn btn-success ml-3">Submit</button>
+                    <a class="btn btn-primary ml-3" href="{{ route('companies.index') }}" enctype="multipart/form-data">
+                        Back</a>
             </div>
         </form>
     </div>

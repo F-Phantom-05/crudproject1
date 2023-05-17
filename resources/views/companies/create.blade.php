@@ -53,8 +53,8 @@
                     </div>
                     
                 </div>
-                    <button type="submit" class="btn btn-primary ml-3">Submit</button>
-                    <a class="btn btn-primary" href="{{ route('companies.index') }}"> Back</a>
+                    <button type="submit" class="btn btn-success ml-3">Submit</button>
+                    <a class="btn btn-primary ml-3 " href="{{ route('companies.index') }}"> Back</a>
             </div>
             
         </form>

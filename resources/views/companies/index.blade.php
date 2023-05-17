@@ -8,19 +8,24 @@
 <style>
     body{
         
-        height: 200vh;
+        height: 100vh;
         background-color: #BEB3A0;
     }
     .rows{
         background-color: #1F2833;
         color: white;
     }
+    th{
+        text-align: center;
+        color: white;
+        border: 2px solid white;
+    }
 </style>
 <body>
-    <div class="container  mt-2">
+    <div class="container mt-2 d-flex flex-column align-items-center justify-content-center">
         <div class="row">
-            <div class="col-lg-12 margin-tb">
-                <div class="pull-left">
+            <div class="col-lg-12 margin-tb d-flex flex-column align-items-center mb-3">
+                <div class="pull-left mt-5">
                     <h2>CRUD COMPANY</h2>
                 </div>
                 <div class="pull-right mb-2">

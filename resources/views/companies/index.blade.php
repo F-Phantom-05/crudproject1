@@ -7,15 +7,21 @@
 </head>
 <style>
     body{
-        background-color: #E74D4D;
+        
+        height: 200vh;
+        background-color: #BEB3A0;
+    }
+    .rows{
+        background-color: #1F2833;
+        color: white;
     }
 </style>
 <body>
-    <div class="container mt-2">
+    <div class="container  mt-2">
         <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left">
-                    <h2>Laravel 9 CRUD Example Tutorial</h2>
+                    <h2>CRUD COMPANY</h2>
                 </div>
                 <div class="pull-right mb-2">
                     <a class="btn btn-success" href="{{ route('companies.create') }}"> Create Company</a>
@@ -29,12 +35,12 @@
         @endif
         <table class="table table-bordered">
             <thead>
-                <tr>
+                <tr class="rows">
                     <th>S.No</th>
                     <th>Company Name</th>
                     <th>Company Email</th>
                     <th>Company Address</th>
-                    <th width="280px">Hello</th>
+                    <th width="280px">Action</th>
                 </tr>
             </thead>
             <tbody>

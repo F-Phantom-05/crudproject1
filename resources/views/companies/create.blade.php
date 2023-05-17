@@ -14,9 +14,7 @@
                 <div class="pull-left mb-2">
                     <h2>Add Company</h2>
                 </div>
-                <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('companies.index') }}"> Back</a>
-                </div>
+                
             </div>
         </div>
         @if(session('status'))
@@ -53,9 +51,12 @@
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                         @enderror
                     </div>
+                    
                 </div>
-                <button type="submit" class="btn btn-primary ml-3">Submit</button>
+                    <button type="submit" class="btn btn-primary ml-3">Submit</button>
+                    <a class="btn btn-primary" href="{{ route('companies.index') }}"> Back</a>
             </div>
+            
         </form>
     </div>
 </body>

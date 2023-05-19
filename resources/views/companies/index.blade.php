@@ -45,7 +45,7 @@
                     <th>Company Name</th>
                     <th>Company Email</th>
                     <th>Company Address</th>
-                    <th width="280px">Action</th>
+                    <th width="180px">Action</th>
                 </tr>
             </thead>
             <tbody>

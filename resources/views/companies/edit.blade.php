@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="container mt-2">
+    <div class="container mt-2 ">
         <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left">
@@ -22,11 +22,11 @@
             {{ session('status') }}
         </div>
         @endif
-        <form action="{{ route('companies.update',$company->id) }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('companies.update',$company->id) }}" method="POST" enctype="multipart/form-data"  >
             @csrf
             @method('PUT')
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-12 ">
                     <div class="form-group">
                         <strong>Company Name:</strong>
                         <input type="text" name="name" value="{{ $company->name }}" class="form-control"

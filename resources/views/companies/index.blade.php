@@ -10,6 +10,7 @@
         
         height: 100vh;
         background-color: #BEB3A0;
+        font-family: "Times New Roman", sans-serif;
     }
     .rows{
         background-color: #1F2833;

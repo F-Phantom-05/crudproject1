@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Add Company Form - Laravel 9 CRUD</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="{{ asset('css/create.css') }}">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left mb-2">
-                    <h2>Add Company</h2>
+                    <h2 style="text-align: center; font-size: 50px;">Add Company</h2>
                 </div>
                 
             </div>

@@ -1,0 +1,20 @@
+body{
+
+    height: 100vh;
+    background-color: #BEB3A0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+form{
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff48;
+    border-radius: 5px;
+    box-shadow: 5px 10px #1f2833a4;
+    
+
+}
+input{
+    
+    width: 200px;
+    height: 100px;
+}

@@ -4,24 +4,8 @@
     <meta charset="UTF-8">
     <title>Laravel 9 CRUD Tutorial Example</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
-<style>
-    body{
-        
-        height: 100vh;
-        background-color: #BEB3A0;
-        font-family: "Times New Roman", sans-serif;
-    }
-    .rows{
-        background-color: #1F2833;
-        color: white;
-    }
-    th{
-        text-align: center;
-        color: white;
-        border: 2px solid white;
-    }
-</style>
 <body>
     <div class="container mt-2 d-flex flex-column align-items-center justify-content-center">
         <div class="row">

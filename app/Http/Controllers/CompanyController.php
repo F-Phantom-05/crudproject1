@@ -39,9 +39,15 @@ class CompanyController extends Controller
             'name' => 'required',
             'email' => 'required',
             'address' => 'required',
+            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            
         ]);
+        $requestData = $request->all();
+        $fileName = time().$request->file('photo')->getClientOriginalName();
+        $path = $request->file('photo')->storeAs('photos', $fileName, 'public');
+        $requestData['photo'] = '/storage/'.$path;
         
-        Company::create($request->post());
+        Company::create($requestData);
 
         return redirect()->route('companies.index')->with('success','Company has been created successfully.');
     }
@@ -82,6 +88,14 @@ class CompanyController extends Controller
             'email' => 'required',
             'address' => 'required',
         ]);
+
+        $requestData = $request->all();
+
+        if ($request->hasFile('photo')) {
+            $fileName = time().$request->file('photo')->getClientOriginalName();
+            $path = $request->file('photo')->storeAs('photos', $fileName, 'public');
+            $requestData['photo'] = '/storage/'.$path;
+        }
         
         $company->fill($request->post())->save();
 

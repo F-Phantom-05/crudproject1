@@ -27,6 +27,7 @@
             <thead>
                 <tr class="rows">
                     <th>S.No</th>
+                    <th>Company logo</th>
                     <th>Company Name</th>
                     <th>Company Email</th>
                     <th>Company Address</th>
@@ -37,6 +38,13 @@
                 @foreach ($companies as $company)
                     <tr>
                         <td>{{ $company->id }}</td>
+                        <td>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#myModal{{$company->id}}">
+                                <div class="d-flex justify-content-center">
+                                    <img src="{{ $company->photo }}" class="rounded-circle" style="width: 50px; height: 50px;">
+                                </div>
+                            </a>
+                        </td>
                         <td>{{ $company->name }}</td>
                         <td>{{ $company->email }}</td>
                         <td>{{ $company->address }}</td>

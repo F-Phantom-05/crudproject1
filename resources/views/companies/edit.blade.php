@@ -59,6 +59,16 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
+                        <strong>Company No.:</strong>
+                        <input type="text" name="number" value="{{ $company->number }}" class="form-control"
+                            placeholder="Company Contact No.">
+                        @error('number')
+                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                        @enderror
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
                         <strong>Company Logo:</strong>
                         <input type="file" name="photo" value="{{ $company->photo }}" class="form-control" style="font-family: Segoe UI; font-size: 20px; width: 700px;">
                         @error('photo')

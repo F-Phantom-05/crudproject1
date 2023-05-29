@@ -40,7 +40,7 @@ class CompanyController extends Controller
             'email' => 'required',
             'address' => 'required',
             'number' => 'required',
-            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'photo' => 'required|image|`mimes:jpeg,png,jpg,gif,svg|max:2048',
             
         ]);
         $requestData = $request->all();

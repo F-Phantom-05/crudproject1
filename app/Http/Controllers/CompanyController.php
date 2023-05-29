@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Company;
 use Illuminate\Http\Request;
 
+
 class CompanyController extends Controller
 {
     /**
@@ -33,16 +34,20 @@ class CompanyController extends Controller
     * @param  \Illuminate\Http\Request  $request
     * @return \Illuminate\Http\Response
     */
-    public function store(Request $request)
+    
+    public function  store(Request $request)
     {
+        
         $request->validate([
+            
             'name' => 'required',
             'email' => 'required',
             'address' => 'required',
             'number' => 'required',
-            'photo' => 'required|image|`mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             
         ]);
+        
         $requestData = $request->all();
         $fileName = time().$request->file('photo')->getClientOriginalName();
         $path = $request->file('photo')->storeAs('photos', $fileName, 'public');
